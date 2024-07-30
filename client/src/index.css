@@ -1,0 +1,222 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif !important;
+}
+
+/* antd override */
+input{
+  border-radius: 2px !important;
+  border: 1px solid rgba(128, 128, 128, 0.521) !important;
+  height: 40px !important;
+}
+input:focus , .ant-picker{
+  outline: none !important;
+  box-shadow: none !important;
+  border: 1px solid gray !important;
+}
+label{
+  font-size: 16px !important;
+  color: black !important;
+}
+.ant-form-item{
+  margin: 10px 0 !important;; 
+}
+.ant-picker-input input{
+  border: none !important;
+}
+.ant-picker{
+  border-radius: 2px !important;
+  border: 1px solid rgba(128, 128, 128, 0.521) !important;
+  height: 40px !important;
+}
+/* Common styling */
+
+.spinner-parent{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.704);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 9999;
+}
+.spinner-border{
+  width: 5rem;
+  height: 5rem;
+  color: white !important;
+}
+
+.page-title{
+  font-size: 25px;
+  color: rgba(0, 0, 0, 0.833);
+  font-weight: bold;
+}
+.card-title{
+  font-size: 22px;
+  font-weight: bold;
+  color: rgba(0, 0, 0, 0.627);
+
+}
+.normal-text{
+  font-size: 1rem;
+}
+.card {
+  box-sizing: border-box;
+  width: 100%;
+  height: 254px;
+  background: rgba(217, 217, 217, 0.58);
+  border: 1px solid white;
+  box-shadow: 12px 17px 51px rgba(0, 0, 0, 0.22);
+  backdrop-filter: blur(6px);
+  border-radius: 17px;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.5s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  user-select: none;
+  font-weight: bolder;
+  color: black;
+  margin-bottom: 10px;
+}
+
+.card:hover {
+  border: 1px solid black;
+  transform: scale(1.05);
+}
+
+.card:active {
+  transform: scale(0.95);
+}
+.notification-card{
+  margin: 10px 0px;
+  background: #d6d2ff5b;
+  border-radius: 5px;
+  box-shadow: 0px 0px 7px 1px #cecece;
+  backdrop-filter: blur(3px);
+}
+.primary-button{
+  background-color: #5845c1 !important;
+  border-color: #8371ed !important;
+  height: 40px !important;
+  width: 100% !important;
+  color: white !important;
+  font-size: 16px !important;
+  width: max-content !important;
+}
+.full-width-button{
+  width: 100% !important;
+}
+p{
+  color: rgba(0, 0, 0, 0.673) !important;
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
+.anchor{
+  color: black !important;
+  cursor: pointer;
+  font-size: 16px !important;
+}
+.anchor:hover{
+  text-decoration: underline !important;
+}
+
+
+.block{
+  color: rgb(255, 255, 255) !important;
+  background-color: crimson;
+  padding: 2px 6px;
+  border-radius: 4px;
+  margin-top: 3px;
+  cursor: pointer;
+  font-size: 16px !important;
+  transition: 0.3s ease all;
+}
+.block:hover{
+  background-color: rgb(173, 0, 35);
+}
+
+.approve{
+  color: rgb(255, 255, 255) !important;
+  background-color: rgb(20, 167, 30);
+  padding: 2px 8px;
+  border-radius: 4px;
+  margin-top: 3px;
+  cursor: pointer;
+  font-size: 16px !important;
+  border: none;
+  outline: none;
+  transition: 0.3s ease all;
+}
+.approve:hover{
+  background-color: rgb(9, 118, 16);
+}
+
+
+
+.cursor-pointer{
+  cursor: pointer;
+}
+
+
+/* authentication pages */
+
+.authentication{
+   height: 100vh;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   /* background-color: #8371e7; */
+   background-image: url('./assets/images/backg.jpg');
+   background-position: center;
+   background-size: cover;
+   background-repeat: no-repeat;
+}
+.authentication-form{
+  background-color: #e8e8e8;
+  box-shadow: 0 0 16px 5px #9a9a9a;
+  width: 400px;
+  border-radius: 5px;
+  padding: 30px auto;
+  opacity: 0.8;
+}
+.authentication-form Input{
+  background: none;
+  border: none;
+  outline: none;
+  background-color: #e2e2e2;
+}
+.bg{
+  background: url("./assets/images/bg.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.neo-morph{
+  border-radius: 10px;
+  background: linear-gradient(145deg, #e4e4e4, #ffffff);
+  box-shadow:  20px 20px 60px #bebebe,
+             -20px -20px 60px #ffffff;
+             transition: 0.2s ease all;
+}
+.neo-morph:hover{
+  scale: 1.05;
+}
+.white{
+  background-color: white;
+  color: green
+}
